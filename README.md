@@ -1,4 +1,4 @@
-Floppy Bird
+Luke Weil - Floppy Bird
 =========
 A fork of Nebez's Floppy bird, themed with Game of Thrones. Watch out!
 
