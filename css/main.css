@@ -143,9 +143,12 @@ Screen - Game
 */
 #gamescreen
 {
-   position: absolute;
+   position: relative;
    width: 600px;
    height: 500px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 20px;
 }
 
 #sky
@@ -374,7 +377,7 @@ Screen - Game
 #footer
 {
    position: absolute;
-   bottom: 3px;
+   bottom: 57px;
    left: 3px;
 }
 
