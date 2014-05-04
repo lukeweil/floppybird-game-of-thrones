@@ -4,13 +4,19 @@ A fork of Nebez's Floppy bird, themed with Game of Thrones. Watch out!
 
 Live App
 ------------
-Check out a live preview of it over here:  
-http://lukeweil.github.io/floppybird-game-of-thrones/
+[Enjoy the live version of it over here](http://lukeweil.github.io/floppybird-game-of-thrones/)
 
 Credits
 ------
-**Original Repo https://github.com/nebez/floppybird
+** Luke Weil - GoT Modifications. You can also find me on:
 
+[Twitter](https://twitter.com/WeilLuke)  
+[Medium](https://medium.com/@WeilLuke)  
+[Wordpress](http://lukeweild.wordpress.com)  
+[Personal Site](http://lukeweil.me)  
+  
+** Original Repo https://github.com/nebez/floppybird
+ 
 
 License
 =====
