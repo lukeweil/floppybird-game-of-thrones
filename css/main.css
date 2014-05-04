@@ -127,7 +127,7 @@ body
    font-family: monospace;
    font-size: 12px;
    color: #fff;
-   background: url("../assets/bg.jpg") bottom;
+   background: url("../assets/bg.jpg") cover;
 }
 .audio{
    text-align: center;
