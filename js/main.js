@@ -138,7 +138,7 @@ function startGame()
    //start up our loops
    var updaterate = 1000.0 / 60.0 ; //60 times a second
    loopGameloop = setInterval(gameloop, updaterate);
-   loopPipeloop = setInterval(updatePipes, 1400);
+   loopPipeloop = setInterval(updatePipes, 1200);
    
    //jump from the start!
    playerJump();
@@ -452,6 +452,7 @@ $("#replay").click(function() {
 function playerScore()
 {
    score += 1;
+   console.log('passed '+score);
    //play score sound
    soundScore.stop();
    soundScore.play();
