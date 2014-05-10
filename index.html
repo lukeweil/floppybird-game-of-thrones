@@ -37,7 +37,7 @@
       <!-- Style sheets -->
       <link href="css/reset.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
-      <script>
+      <!--<script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -47,7 +47,7 @@
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
       
-      </script>
+      </script>-->
    </head>
    <body>
       <div id="gamecontainer">
@@ -72,38 +72,41 @@
                      <div id="currentscore"></div>
                      <div id="highscore"></div>
                      <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                     <div id="refer"><a href="http://lukeweil.github.io/game-of-thrones-2048/">Try 2048 GoT edition!!!</a></div>
                   </div>
                   
                   <!-- Pipes go here! -->
                </div>
             </div>
             <div id="land" class="animated"><div id="debug"></div></div>
+            <div class="audio">
+               <audio loop="loop" class="audio" autoplay="autoplay" controls="controls">  
+                  <source src="assets/sounds/theme.mp3" />
+               </audio> 
+            </div>
             <div id="footer">
                <a href="http://www.dotgears.com/" rel="nofollow">original game/concept/art by dong nguyen</a>
                <a href="http://nebezb.com/" rel="nofollow">recreated by nebez briefkani</a>
                <a href="http://weiln.com/">modified by luke weil</a>
                <a href="http://github.com/lukeweil/">view github project</a>
             </div>
-            
+
+
+
          </div>
+
       </div>
-      
-      
-<!-- 
-      <div class="audio">
-         <div class="description">For your pleasure:</div>
-         <audio loop="loop" class="audio" autoplay="autoplay" controls="controls">  
-            <source src="assets/sounds/theme.mp3" />
-         </audio> 
-      </div> -->
+
 
       <div class="boundingbox" id="playerbox"></div>
       <div class="boundingbox" id="pipebox"></div>
       
+
+
       <script src="js/jquery.min.js"></script>
       <script src="js/jquery.transit.min.js"></script>
       <script src="js/buzz.min.js"></script>
       <script src="js/main.js"></script>
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-535c8fbc49ec17c7"></script>
+      <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-535c8fbc49ec17c7"></script> -->
    </body>
 </html>

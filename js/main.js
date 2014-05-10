@@ -411,12 +411,13 @@ function showScore()
    //show the scoreboard
    $("#scoreboard").css({ y: '40px', opacity: 0 }); //move it down so we can slide it up
    $("#replay").css({ y: '40px', opacity: 0 });
+   $("#refer").css({ y: '40px', opacity: 0 });
    $("#scoreboard").transition({ y: '0px', opacity: 1}, 600, 'ease', function() {
       //When the animation is done, animate in the replay button and SWOOSH!
       soundSwoosh.stop();
       soundSwoosh.play();
       $("#replay").transition({ y: '0px', opacity: 1}, 600, 'ease');
-      
+      $("#refer").transition({ y: '0px', opacity: 1}, 600, 'ease');
       //also animate in the MEDAL! WOO!
       if(wonmedal)
       {
@@ -430,8 +431,9 @@ function showScore()
 }
 
 $("#replay").click(function() {
+   $("#sky").css('background-image',"url('assets/sky2.jpg')");
    //make sure we can only click once
-   if(!replayclickable)
+   if(!replayclickable) 
       return;
    else
       replayclickable = false;
@@ -452,7 +454,23 @@ $("#replay").click(function() {
 function playerScore()
 {
    score += 1;
-   console.log('passed '+score);
+   if(score == 10){
+      $("#sky").css('background-image',"url('assets/sky50.jpg')");
+      $("#sky").removeClass("animated").addClass("animated");
+   }else if(score == 8){
+      $("#sky").css('background-image',"url('assets/sky40.jpg')");
+      $("#sky").removeClass("animated").addClass("animated");
+   }else if(score == 6){
+      $("#sky").css('background-image',"url('assets/sky30.jpg')");
+      $("#sky").removeClass("animated").addClass("animated");
+   }else if(score == 4){
+      $("#sky").css('background-image',"url('assets/sky20.jpg')");
+      $("#sky").removeClass("animated").addClass("animated");
+   }else if(score == 2){
+      $("#sky").css('background-image',"url('assets/sky10.jpg')");
+      $("#sky").removeClass("animated").addClass("animated");
+   }
+
    //play score sound
    soundScore.stop();
    soundScore.play();
