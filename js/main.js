@@ -454,19 +454,19 @@ $("#replay").click(function() {
 function playerScore()
 {
    score += 1;
-   if(score == 10){
+   if(score == 50){
       $("#sky").css('background-image',"url('assets/sky50.jpg')");
       $("#sky").removeClass("animated").addClass("animated");
-   }else if(score == 8){
+   }else if(score == 40){
       $("#sky").css('background-image',"url('assets/sky40.jpg')");
       $("#sky").removeClass("animated").addClass("animated");
-   }else if(score == 6){
+   }else if(score == 30){
       $("#sky").css('background-image',"url('assets/sky30.jpg')");
       $("#sky").removeClass("animated").addClass("animated");
-   }else if(score == 4){
+   }else if(score == 20){
       $("#sky").css('background-image',"url('assets/sky20.jpg')");
       $("#sky").removeClass("animated").addClass("animated");
-   }else if(score == 2){
+   }else if(score == 10){
       $("#sky").css('background-image',"url('assets/sky10.jpg')");
       $("#sky").removeClass("animated").addClass("animated");
    }
